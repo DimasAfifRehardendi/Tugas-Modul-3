@@ -15,6 +15,7 @@ public class PembayaranKasir {
 
         do {
             System.out.println("***Selamat Datang ***");
+            
             System.out.println("Barang Yang Tersedia Di Toko Kami");
             System.out.println("1. Pensil ");
             System.out.println("2. Buku ");
