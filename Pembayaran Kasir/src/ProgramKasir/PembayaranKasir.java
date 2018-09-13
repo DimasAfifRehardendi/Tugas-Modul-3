@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class PembayaranKasir {
 
     public static void main(String[] args) {
+        System.out.println("Dimas Afif Rehardendi / X RPL 6 / 18");
         Scanner in = new Scanner(System.in);
         double hargabarang = 0, jumlahbarang, pilihan, totalhargabarang = 0, ulangi = 0, jumlah;
 
