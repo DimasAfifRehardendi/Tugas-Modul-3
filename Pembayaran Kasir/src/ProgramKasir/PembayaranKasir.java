@@ -9,13 +9,12 @@ public class PembayaranKasir {
         Scanner in = new Scanner(System.in);
         double hargabarang = 0, jumlahbarang, pilihan, totalhargabarang = 0, ulangi = 0, jumlah;
 
-        int diskon1 = 10;
-        int diskon2 = 20;
-        int diskon3 = 50;
+        double diskon1 = 0.10;
+        double diskon2 = 0.20;
+        double diskon3 = 0.50;
 
         do {
             System.out.println("***Selamat Datang ***");
-            
             System.out.println("Barang Yang Tersedia Di Toko Kami");
             System.out.println("1. Pensil ");
             System.out.println("2. Buku ");
@@ -65,13 +64,13 @@ public class PembayaranKasir {
                 System.out.println("Total Harga : " + totalhargabarang);
             }
             if (totalhargabarang > 100000) {
-                jumlah = totalhargabarang / diskon1;
+                jumlah = totalhargabarang * diskon1;
                 System.out.println("Anda Mendapatkan Diskon 10% : " + jumlah);
             } else if (totalhargabarang > 200000) {
-                jumlah = totalhargabarang / diskon2;
+                jumlah = totalhargabarang * diskon2;
                 System.out.println("Anda Mendapatkan Diskon 20% : " + jumlah);
             } else if (totalhargabarang > 500000) {
-                jumlah = totalhargabarang / diskon3;
+                jumlah = totalhargabarang * diskon3;
                 System.out.println("Anda Mendapatkan Diskon 50% : " + jumlah);
             } else if (totalhargabarang < 100000) {
                 System.out.println("Maaf Diskon Hanya Berlaku Untuk Pembelian Yang Berjumlah Rp.100.000.- Ke Atas");
