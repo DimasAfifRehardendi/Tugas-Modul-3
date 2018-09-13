@@ -24,56 +24,42 @@ public class PembayaranKasir {
             System.out.println("6. Bolpoin");
             System.out.println("7. Isi Bolpoin");
             System.out.println("8. Penggaris");
-
+            System.out.println("");
             System.out.println("Masukan Pilihan Barang Yang Ingin Di Beli : ");
             pilihan = in.nextInt();
+            System.out.println("Masukan Jumlah Barang Yang Ingin Di Beli : ");
+            jumlahbarang = in.nextInt();
 
             if (pilihan == 1) {
                 hargabarang = 10000;
-                System.out.println("Masukan Jumlah Barang Yang Ingin Di Beli : ");
-                jumlahbarang = in.nextInt();
                 totalhargabarang = jumlahbarang * hargabarang;
                 System.out.println("Total Harga : " + totalhargabarang);
             } else if (pilihan == 2) {
                 hargabarang = 12000;
-                System.out.println("Masukan Jumlah Barang Yang Ingin Di Beli : ");
-                jumlahbarang = in.nextInt();
                 totalhargabarang = jumlahbarang * hargabarang;
                 System.out.println("Total Harga : " + totalhargabarang);
             } else if (pilihan == 3) {
                 hargabarang = 25000;
-                System.out.println("Masukan Jumlah Barang Yang Ingin Di Beli : ");
-                jumlahbarang = in.nextInt();
                 totalhargabarang = jumlahbarang * hargabarang;
                 System.out.println("Total Harga : " + totalhargabarang);
             } else if (pilihan == 4) {
                 hargabarang = 15000;
-                System.out.println("Masukan Jumlah Barang Yang Ingin Di Beli : ");
-                jumlahbarang = in.nextInt();
                 totalhargabarang = jumlahbarang * hargabarang;
                 System.out.println("Total Harga : " + totalhargabarang);
             } else if (pilihan == 5) {
                 hargabarang = 12000;
-                System.out.println("Masukan Jumlah Barang Yang Ingin Di Beli : ");
-                jumlahbarang = in.nextInt();
                 totalhargabarang = jumlahbarang * hargabarang;
                 System.out.println("Total Harga : " + totalhargabarang);
             } else if (pilihan == 6) {
                 hargabarang = 30000;
-                System.out.println("Masukan Jumlah Barang Yang Ingin Di Beli : ");
-                jumlahbarang = in.nextInt();
                 totalhargabarang = jumlahbarang * hargabarang;
                 System.out.println("Total Harga : " + totalhargabarang);
             } else if (pilihan == 7) {
                 hargabarang = 14000;
-                System.out.println("Masukan Jumlah Barang Yang Ingin Di Beli : ");
-                jumlahbarang = in.nextInt();
                 totalhargabarang = jumlahbarang * hargabarang;
                 System.out.println("Total Harga : " + totalhargabarang);
             } else if (pilihan == 8) {
                 hargabarang = 12000;
-                System.out.println("Masukan Jumlah Barang Yang Ingin Di Beli : ");
-                jumlahbarang = in.nextInt();
                 totalhargabarang = jumlahbarang * hargabarang;
                 System.out.println("Total Harga : " + totalhargabarang);
             }
@@ -91,7 +77,7 @@ public class PembayaranKasir {
             }
             System.out.print("Yang terhormat  apakah ingin menambah barang ? 1 untuk Y, 2 untuk N");
             ulangi = in.nextInt();
-
+            
         } while (ulangi == 1);
         System.out.println("###Trimakasih Telah Berkunjung Di Toko Kami###");
         System.out.println("=====Semoga Hari Anda Menyenangkan=====");
