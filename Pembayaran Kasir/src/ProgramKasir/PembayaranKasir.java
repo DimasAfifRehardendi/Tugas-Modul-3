@@ -7,7 +7,7 @@ public class PembayaranKasir {
     public static void main(String[] args) {
         System.out.println("Dimas Afif Rehardendi / X RPL 6 / 18");
         Scanner in = new Scanner(System.in);
-        double hargabarang = 0, jumlahbarang, pilihan, totalhargabarang = 0, ulangi = 0, jumlah;
+        double hargabarang = 0, jumlahbarang, pilihan, totalhargabarang = 0, ulangi = 0, jumlah, TotalYangHarusDiBayar;
 
         double diskon1 = 0.10;
         double diskon2 = 0.20;
@@ -63,23 +63,31 @@ public class PembayaranKasir {
                 totalhargabarang = jumlahbarang * hargabarang;
                 System.out.println("Total Harga : " + totalhargabarang);
             }
-            if (totalhargabarang > 100000) {
-                jumlah = totalhargabarang * diskon1;
-                System.out.println("Anda Mendapatkan Diskon 10% : " + jumlah);
+            if (totalhargabarang > 500000) {
+                jumlah = totalhargabarang * diskon3;
+                System.out.println("Anda Mendapatkan Diskon 50% : " + jumlah);
+                TotalYangHarusDiBayar = totalhargabarang - jumlah;
+                System.out.println("Total Yang Harus Anda Bayar : " + TotalYangHarusDiBayar);
             } else if (totalhargabarang > 200000) {
                 jumlah = totalhargabarang * diskon2;
                 System.out.println("Anda Mendapatkan Diskon 20% : " + jumlah);
-            } else if (totalhargabarang > 500000) {
-                jumlah = totalhargabarang * diskon3;
-                System.out.println("Anda Mendapatkan Diskon 50% : " + jumlah);
-            } else if (totalhargabarang < 100000) {
+                TotalYangHarusDiBayar = totalhargabarang - jumlah;
+                System.out.println("Total Yang Harus Anda Bayar : " + TotalYangHarusDiBayar);
+            } else if (totalhargabarang > 100000) {
+                jumlah = totalhargabarang * diskon1;
+                System.out.println("Anda Mendapatkan Diskon 10% : " + jumlah);
+                TotalYangHarusDiBayar = totalhargabarang - jumlah;
+                System.out.println("Total Yang Harus Anda Bayar : " + TotalYangHarusDiBayar);      
+            } 
+            if (totalhargabarang < 100000) {
                 System.out.println("Maaf Diskon Hanya Berlaku Untuk Pembelian Yang Berjumlah Rp.100.000.- Ke Atas");
             }
             System.out.print("Yang terhormat  apakah ingin menambah barang ? 1 untuk Y, 2 untuk N");
             ulangi = in.nextInt();
-            
+
         } while (ulangi == 1);
         System.out.println("###Trimakasih Telah Berkunjung Di Toko Kami###");
+
         System.out.println("=====Semoga Hari Anda Menyenangkan=====");
 
     }
