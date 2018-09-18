@@ -1,6 +1,6 @@
 package Modul1;
 
-public class Latihan9 {
+public class Latihan09 {
 
     public static void main(String[] args) {
         System.out.println("Semangat Pagi!!!");

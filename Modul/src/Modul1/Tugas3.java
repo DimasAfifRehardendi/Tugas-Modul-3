@@ -1,24 +1,21 @@
 package Modul1;
-import java.util.Scanner;
+
 public class Tugas3 {
 
     public static void main(String[] args) {
-        String nama, nis, tempatlahir, tangallahir, jeniskelamin, alamatdimalang, mottohidup;
-        Scanner masukan = new Scanner(System.in);
-        System.out.println("Nama : ");
-        nama = masukan.next();
-        System.out.println("NIS : ");
-        nis = masukan.next();
-        System.out.println("Tempatlahir :");
-        tempatlahir = masukan.next();
-        System.out.println("Tanggal Lahir : ");
-        tangallahir = masukan.next();
-        System.out.println("Jenis Kelamin : ");
-        jeniskelamin = masukan.next();
-        System.out.println("Alamat di Malang : ");
-        alamatdimalang = masukan.next();
-        System.out.println("Motto Hidup : ");
-        mottohidup = masukan.next();
+        String nama = "Dimas";
+        int nis = 5888;
+        String tempatlahir = "Banyuwangi";
+        String jeniskelamin = "Laki-Laki";
+        String alamatdimalang = "Jl.Danau Tambingan No.G6i8";
+        String motto = "Tidak Ada Katanya Menyerah Di Dalam Kamus Ku !!";
+        System.out.println("Nama             : " + nama);
+        System.out.println("NIS              : " + nis);     
+        System.out.println("Tempatlahir      : " + tempatlahir);     
+        System.out.println("Tanggal Lahir    : 24-11-2002" );   
+        System.out.println("Jenis Kelamin    : " + jeniskelamin);   
+        System.out.println("Alamat di Malang : " + alamatdimalang);   
+        System.out.println("Motto Hidup      : " + motto);    
     }
 
 }
